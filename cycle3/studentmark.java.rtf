@@ -1,0 +1,45 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\tx720\cf1\f0\fs38 import java.util.*;\par
+class studentmark\par
+\{\par
+    public static void main (String[] args)\par
+    \{\par
+        Student s=new Student();\par
+        s.Read();\par
+        s.Display();\par
+    \}\par
+\}\par
+class Student\par
+\{\par
+    String name;\par
+    int rollno,i;\par
+    int m[]=new int[5];\par
+    \par
+    void Read()\par
+    \{\par
+        Scanner in=new Scanner(System.in);\par
+        System.out.println("Enter your name:");\par
+        name=in.nextLine();\par
+        System.out.println("Enter your roll number:");\par
+        rollno=in.nextInt();\par
+        System.out.println("Enter the marks of 5 subjects.");\par
+        for(i=0;i<5;i++)\par
+        \{\par
+            System.out.println("Enter marks of subject"+(i+1));\par
+            m[i]=in.nextInt();\par
+        \}\par
+    \}\par
+    void Display()\par
+    \{\par
+        System.out.println("The entered list is:");\par
+        System.out.println("Name:"+name);\par
+        System.out.println("Roll number:"+rollno);\par
+        for(i=0;i<5;i++)\par
+        \{\par
+            System.out.println("Marks of subject "+(i+1)+" is "+m[i]); \par
+        \}\par
+    \}\par
+\}\par
+}
