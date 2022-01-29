@@ -1,0 +1,51 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\tx720\cf1\f0\fs38\par
+   \par
+import java.util.*;\par
+ abstract class GeometricalStructure\par
+\{\par
+     void Numberofsides()\par
+     \{\}\par
+\}\par
+\par
+ class Rectangle extends Shape\par
+ \{\par
+     void Numberofsides()\par
+     \{\par
+         System.out.println("The side of Rectangle:4");\par
+     \}\par
+ \}\par
+ \par
+ class Triangle extends Shape\par
+ \{\par
+      void Numberofsides()\par
+     \{\par
+         System.out.println("The side of Triangle:3");\par
+     \}\par
+ \}\par
+ \par
+ class Hexagon extends Shape\par
+ \{\par
+     void Numberofsides()\par
+     \{\par
+         System.out.println("The side of Hexagon:6");\par
+     \} \par
+ \}\par
+ \par
+ class side\par
+ \{\par
+     public static void main(String[]args)\par
+     \{\par
+       \par
+       Rectangle r = new Rectangle();\par
+       Triangle t = new Triangle();\par
+       Hexagon h = new Hexagon();\par
+          r.Numberofsides();\par
+          t.Numberofsides();\par
+          h.Numberofsides();\par
+   \par
+     \}\par
+\}\par
+}
